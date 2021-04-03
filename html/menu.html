@@ -9,19 +9,11 @@
 
   <body>
     <div class="top">
-      <div id="menuToggler">&#8801;</div>
-      <nav id="myBasket">
-        <h2>Basket</h2>
-        <ul>
-          <li>item1 £</li>
-          <li>item2 £</li>
-          <li>total £</li>
-        </ul>
-        <button class="checkoutBtn">Checkout</button>
-      </nav>
+      <!-- <div id="menuToggler">&#8801;</div> -->
+      <div id="menuToggler"><ion-icon name="basket-outline"></ion-icon></div>
+
 
       <div class="log">
-        <button id=logBtn>Login/Register</button>
         <a href="login.html"><img src="../images/PngItem_1114675.png" alt ="Login/Register"></a>
         <!-- image source pngitem.com -->
       </div>
@@ -36,268 +28,321 @@
 
   <div id="discount">
     <a href="#"><h2>Discount Code</h2></a>
-    <a href="menu.html"><h2>Menu</h2></a>
+    <nav id="menuJump">
+      <a href="#pizza">Pizza</a>
+      <a href="#kebab">Kebab</a>
+      <a href="#burgers">Burgers</a>
+      <a href="#sides">Sides</a>
+      <a href="#drinks">Drinks</a>
+      <a href="#desserts">Desserts</a>
+    </nav>
   </div>
 
-
-
     <main>
-      <div class="menuWrapper">
+      <div class="menuContainer">
+        <nav id="menuJump2">
+          <a href="#pizza">Pizza</a>
+          <a href="#kebab">Kebab</a>
+          <a href="#burgers">Burgers</a>
+          <a href="#sides">Sides</a>
+          <a href="#drinks">Drinks</a>
+          <a href="#desserts">Desserts</a>
 
-        <div class="foodItem">
-          <h2>Pizza</h2>
+        </nav>
 
-          <section>
-          <h4>Margherita</h4>
-          <select id="base" name="select size">
-            <option value="8">8"</option>
-            <option value="10">10"</option>
-            <option value="12">12"</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
+        <div class="menuWrapper">
 
-          <section>
-            <h4>Pepperoni</h4>
-          <select id="base" name="select size">
-            <option value="8">8"</option>
-            <option value="10">10"</option>
-            <option value="12">12"</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
+          <div class="foodItem">
+            <h2 id="pizza">Pizza</h2>
 
-          <section>
-            <h4>Ham & Mushroom</h4>
-          <select id="base" name="select size">
-            <option value="8">8"</option>
-            <option value="10">10"</option>
-            <option value="12">12"</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
+            <section>
+            <h4 class="foodTitle">Margherita</h4>
+              <select id="base" name="select size">
+                <option value="8">8"</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+            <span class="price">£7.99</span>
 
-          <section>
-            <h4>Meat Feast</h4>
-          <select id="base" name="select size">
-            <option value="8">8"</option>
-            <option value="10">10"</option>
-            <option value="12">12"</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
+            </section>
 
+            <section>
+              <h4 class="foodTitle">Pepperoni</h4>
+              <select id="base" name="select size">
+                <option value="8">8"</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Ham & Mushroom</h4>
+              <select id="base" name="select size">
+                <option value="8">8"</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Meat Feast</h4>
+              <select id="base" name="select size">
+                <option value="8">8"</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+
+          </div>
+
+          <div class="foodItem">
+            <h2 id="kebab">Kebab</h2>
+
+            <section>
+              <h4 class="foodTitle">Doner</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Lamb Shish</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Kofte</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Chicken</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+          </div>
+
+          <div class = "foodItem">
+            <h2 id="burgers">Burgers</h2>
+
+            <section>
+              <h4 class="foodTitle">Beef Burger</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Doner Burger</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Cheese Burger</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Chicken Burger</h4>
+              <select id="salad" name="salad">
+                <option value="all">All Salad</option>
+                <option value="no">No Salad</option>
+                <option value="lettuce">Lettuce</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+          </div>
+
+          <div class = "foodItem">
+            <h2 id="sides">Sides</h2>
+
+            <section>
+              <h4 class="foodTitle">Fries</h4>
+              <select id="base" name="select size">
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Garlic Bread</h4>
+              <select id="base" name="select size">
+                <option value="8">8"</option>
+                <option value="10">10"</option>
+                <option value="12">12"</option>
+              </select>
+            <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Garlic Mushrooms</h4>
+              <select id="base" name="select size">
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Chicken Nuggets</h4>
+              <select id="base" name="select size">
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+              </select>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+          </div>
+
+          <div class = "foodItem">
+            <h2 id="drinks">Drinks</h2>
+
+            <section>
+              <h4 class="foodTitle">Pepsi</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Pepsi Max</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Fanta</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Sprite</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+          </div>
+
+          <div class = "foodItem">
+            <h2 id="desserts">Desserts</h2>
+
+            <section>
+              <h4 class="foodTitle">Chocolate Fudge Cake</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">New York Cheesecake</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Cornflake Tart</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+            <section>
+              <h4 class="foodTitle">Vanilla Ice Cream</h4>
+              <span></span>
+              <button class="addBtn">ADD</button>
+              <span class="price">£7.99</span>
+            </section>
+
+          </div>
 
         </div>
-
-        <div class="foodItem">
-          <h2>Kebab</h2>
-
-          <section>
-            <h4>Doner</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
+        <nav id="myBasket">
+          <div class="headerBasket">
+            <h2>Basket</h2><span class="inBasket">(0)</span>
+          </div>
+          <section class="basketContent">
           </section>
+          <a href = "checkout.html">
+            <button class="checkoutBtn">checkout</button>
+          </a>
+        </nav>
 
-          <section>
-            <h4>Lamb Shish</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Kofte</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Chicken</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-        </div>
-
-        <div class = "foodItem">
-          <h2>Burgers</h2>
-
-          <section>
-            <h4>Beef Burger</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Doner Burger</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Cheese Burger</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Chicken Burger</h4>
-          <select id="salad" name="salad">
-            <option value="all">All Salad</option>
-            <option value="no">No Salad</option>
-            <option value="lettuce">Lettuce</option>
-          </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-        </div>
-
-        <div class = "foodItem">
-          <h2>Sides</h2>
-
-          <section>
-            <h4>Fries</h4>
-            <select id="base" name="select size">
-              <option value="s">Small</option>
-              <option value="m">Medium</option>
-              <option value="l">Large</option>
-            </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Garlic Bread</h4>
-            <select id="base" name="select size">
-              <option value="8">8"</option>
-              <option value="10">10"</option>
-              <option value="12">12"</option>
-            </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Garlic Mushrooms</h4>
-            <select id="base" name="select size">
-              <option value="s">Small</option>
-              <option value="m">Medium</option>
-              <option value="l">Large</option>
-            </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Chicken Nuggets</h4>
-            <select id="base" name="select size">
-              <option value="s">Small</option>
-              <option value="m">Medium</option>
-              <option value="l">Large</option>
-            </select>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-        </div>
-
-        <div class = "foodItem">
-          <h2>Drinks</h2>
-
-          <section>
-            <h4>Pepsi</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Pepsi Max</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Fanta</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Sprite</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-        </div>
-
-        <div class = "foodItem">
-          <h2>Desserts</h2>
-
-          <section>
-            <h4>Chocolate fudge cake</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>New York Cheesecake</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Cornflake tart</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-          <section>
-            <h4>Vanilla ice cream</h4>
-          <span></span>
-          <button class="addBtn">ADD</button>
-          </section>
-
-
-        </div>
 
     </div>
 
@@ -315,7 +360,10 @@
         <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="../images/insta.png" alt ="Instagram"></a>
       </nav>
     </footer>
+
     <script src="../javaScript/scripts.js"></script>
+    <script src="../javaScript/basket2.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
   </body>
 

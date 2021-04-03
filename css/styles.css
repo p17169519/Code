@@ -65,12 +65,11 @@ main {
   flex-direction: column;
   width: 100%;
   text-align: center;
+  align-items: center;
 }
 
 #discount {
-  /* text-align: center; */
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   text-align: center;
   background-color: #e62e40;
@@ -78,7 +77,7 @@ main {
 }
 
 #orderBtn {
-  /* padding: 50px; */
+  padding: 50px;
   padding-top: 15px;
   padding-bottom: 10px;
   margin: 10px;
@@ -90,10 +89,6 @@ main {
   border: 6px solid black;
   justify-content: center;
   display: flex;
-}
-
-#logBtn {
-  display: none;
 }
 
 .log {
@@ -116,7 +111,6 @@ main {
 nav {
   display: flex;
   justify-content: center;
-  /* text-align: center; */
 }
 
 nav a {
@@ -142,7 +136,6 @@ article {
   margin: 0.7em;
   padding: 0.5em;
   border-color: red;
-  /* max-width: 500px; */
 }
 
 .wrapper {
@@ -163,10 +156,14 @@ article p {
 
 }
 
-em {
-  font-style: normal;
-  font-weight: bold;
-  font-family: Copperplate;
+#topBtn {
+  width: 90vw;
+  background-color: red;
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+
 }
 
 /* form/login START */
@@ -215,29 +212,26 @@ form label {
   text-align: left;
 }
 
-.btn1 {
-  border: 2px solid #e62e40;
-  font-size: 25px;
-  margin: 10px;
-  font-weight: bold;
+/********************* form/login END *****************************/
+
+/************************* menu start ***************************/
+
+#menuJump {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
 }
 
-.btn1:hover {
-  background: #e62e40;
+#menuJump a {
+  color: white;
+  font-weight: bolder;
 }
 
-.sign_in {
-  border: 2px solid #e62e40;
-  width: 550px;
-  padding-left: 20px;
-  margin-left: 20px;
+#menuJump2 {
+  display: none;
 }
-/* form/login END */
-
-/* menu start */
 
 .foodItem {
-  /* align-items: center; */
   margin-left: 10px;
 }
 
@@ -248,7 +242,7 @@ form label {
 
 section {
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
   align-items: center;
 }
 
@@ -256,6 +250,7 @@ h4  {
   padding-right: 15px;
   width: 50%;
   text-align: left;
+
 }
 
 span {
@@ -282,13 +277,12 @@ span {
   border-style: solid;
   padding: 1em;
   padding-top: 0.5em;
-  margin-top: 1em;
+  margin-top: 2.2em;
+  margin-left: 0.5em;
   font-size: 2.2em;
-  background-color: green;
-
+  background-color: white;
   opacity: 0;
   position: fixed;
-  width: 90%;
   top: 0;
   transform: translateX(-100vw);
   transition: 0.5s;
@@ -296,8 +290,9 @@ span {
 
 #myBasket.open {
   /* display: flex; */
-  opacity: 2;
-   transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
 }
 
 #myBasket h2 {
@@ -313,6 +308,56 @@ span {
   line-height: 2em;
 }
 
+.headerBasket {
+  display: flex;
+  text-align: center;
+}
+
+.basketContent {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5em;
+  align-items: flex-start;
+}
+
+.inBasket {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 1.2em;
+}
+
+.insideBasket {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  padding-bottom: 8px;
+}
+
+.product {
+  display: flex;
+  width: 70%;
+}
+
+.product span {
+  text-align: left;
+}
+
+.quantity {
+  width: 15%;
+}
+
+.total {
+  display: flex;
+  width: 15%;
+}
+
+.finalTotal {
+  padding-bottom: 10px;
+  text-align: right;
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .top {
   display: flex;
 }
@@ -322,23 +367,45 @@ span {
   right: 0;
 }
 
-/* menu end */
+.checkoutBtn {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  background-color: black;
+}
 
-@media screen and (min-width: 500px) {
+/****************************** menu end **********************************/
 
-    .menuWrapper {
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-column-gap: 2em;
-    }
+/************************** checkout start ***********************************/
+.personalDetails {
+  display: flex;
+  flex-direction: column;
+}
 
-    .addBtn {
-      position: relative;
-      right: 10px;
-    }
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+#postCode, #cvv {
+  max-width: 50%
+}
+
+.line input[type="submit"] {
+  width: 40%;
+}
 
 
+/************************** checkout end *******************************/
 
+/********************** contact start *********************************/
+
+#googleMap {
+  border: red solid;
+  width: 95%;
+  height: 500px;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 680px)  {
@@ -374,7 +441,40 @@ span {
   header img {
     width: 80px;
     height: 80px;
+    padding-top: 10px;
   }
+
+  /* for menu */
+  #myBasket {
+    position: sticky;
+    transform: translateX(0);
+    opacity: 1;
+    top: 100px;
+
+  }
+
+  .menuContainer {
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  #menuToggler {
+    display: none;
+  }
+
+  .addBtn {
+    position: relative;
+  }
+
+  .foodItem {
+    min-width: 500px;
+    padding-left: 50px;
+  }
+
+
 
 }
 
@@ -422,6 +522,15 @@ span {
     font-size: 50px;
   }
 
+  .foodItem h2 {
+    font-size: 75px;
+
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
   form {
     grid-template-columns: minmax(max-content, 1fr) 3fr;
 
@@ -434,11 +543,39 @@ span {
     /* padding: 5em, 5em, 5em, 5em; */
   }
 
-  .menuWrapper {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 2em;
+  #menuJump {
+    display: none;
   }
+
+  #menuJump2 {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 1em;
+    padding-top: 0.5em;
+    margin-top: 2.2em;
+    top: 2.2em;
+    position: sticky;
+    margin-top: 80px;
+
+  }
+
+  #menuJump2 a {
+    color: red;
+    font-size: 1.8em;
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-weight: bolder;
+  }
+
+  .addBtn {
+    font-size: 25px;
+  }
+
+  select {
+    font-size: 25px;
+
+  }
+
 
 
 
