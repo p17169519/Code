@@ -48,6 +48,22 @@ h2 a {
   margin-bottom: 0;
 }
 
+.onHover  {
+  display: none;
+  color: red;
+  border: none;
+  padding: 10px;
+  background-color: white;
+}
+
+.log:hover .onHover {
+  display: block;
+}
+
+.onHover:hover {
+  display: flex;
+}
+
 h3 {
   font-size: 40px;
   margin: 0;
@@ -99,7 +115,6 @@ main {
 }
 
 .log a {
-  /* border: 0.2em solid #e62e40; */
   padding: 0.2em;
 }
 
@@ -408,6 +423,14 @@ span {
   margin-bottom: 5px;
 }
 
+/******************************** contact end ***********************/
+
+/******************************** admin start ****************************/
+
+.adminSection h2 {
+  color: red;
+}
+
 @media screen and (min-width: 680px)  {
 
   .wrapper img {
@@ -444,7 +467,17 @@ span {
     padding-top: 10px;
   }
 
-  /* for menu */
+  .log img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .log:hover {
+
+  }
+
+
+  /*************************** for menu ***************************/
   #myBasket {
     position: sticky;
     transform: translateX(0);
