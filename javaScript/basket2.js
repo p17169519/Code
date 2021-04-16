@@ -1,4 +1,5 @@
 let baskets = document.querySelectorAll('.addBtn');
+
 let products = [
   {
     catogry: 'Pizza',
@@ -226,7 +227,6 @@ function totalCost(product) {
   } else {
     localStorage.setItem("totalCost", product.price);
   }
-
 }
 
 function displayBasket() {

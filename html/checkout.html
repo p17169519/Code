@@ -21,11 +21,28 @@
     </header>
 
     <div id="discount">
-      <a href="#"><h2>Discount Code</h2></a>
+      <a href="#"><h2>use code <em>'KK10'</em> for 10% off</h2></a>
       <a href="https://www.paypal.com/uk/home"><h2>Pay with PayPal</h2></a>
     </div>
 
     <main>
+      <div class="checkContainer">
+
+        <nav id="checkoutBasket">
+          <div class="headerBasket">
+            <h2>Basket</h2><span class="inBasket">(0)</span>
+          </div>
+          <section class="basketContent">
+          </section>
+          <form class="applyDiscount">
+            <label for="discountOff"></label>
+            <input id="discountOff" name="code" placeholder="Enter code">
+            <input type="button" class="button" name="" value="Discount">
+            <div id="newCost"></div>
+
+          </form>
+        </nav>
+
         <form class="personalDetails">
           <a href="login.html"><h2>Already registered?</h2></a>
           <span class="line">
@@ -67,7 +84,7 @@
             <input id="cardName" name="cardName" placeholder="Name on card" required>
           </span>
           <span class="line">
-            <label for="cardNumber">Name on card:</label>
+            <label for="cardNumber">Name number:</label>
             <input id="cardNumber" name="cardNumber" placeholder="Card Number" required>
           </span>
           <span class="line">
@@ -83,8 +100,8 @@
             <input type="submit" value="Pay">
           </span>
 
-      </form>
-
+        </form>
+      </div>
     </main>
 
     <footer>
@@ -96,7 +113,9 @@
         <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="../images/insta.png" alt ="Instagram"></a>
       </nav>
     </footer>
-    <script src="../javaScript/scripts.js"></script>
+    <!-- <script src="../javaScript/scripts.js"></script> -->
+    <script src="../javaScript/basket2.js"></script>
+    <script src="../javaScript/checkout.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,48 @@
+*****************customer table*****************
+
+CREATE TABLE `kebab_kitchen_plus`.`customer`
+( `customerId` INT(11) NOT NULL AUTO_INCREMENT ,
+`firstName` VARCHAR(50) NOT NULL ,
+`secondName` VARCHAR(50) NOT NULL ,
+`email` VARCHAR(50) NOT NULL ,
+`contactNumber` BIGINT(12) NOT NULL ,
+`firstAddress` VARCHAR(50) NOT NULL ,
+`secondAddress` VARCHAR(50) NOT NULL ,
+`thirdAddress` VARCHAR(50) NULL ,
+`postCode` VARCHAR(10) NOT NULL ,
+`password` VARCHAR(20) NOT NULL ,
+PRIMARY KEY (`customerId`)) ENGINE = InnoDB;
+
+
+***********************employee table****************8
+
+CREATE TABLE `kebab_kitchen_plus`.`employee`
+( `adminId` INT(10) NOT NULL AUTO_INCREMENT ,
+`firstName` VARCHAR(50) NOT NULL ,
+`secondName` VARCHAR(50) NOT NULL ,
+PRIMARY KEY (`adminId`)) ENGINE = InnoDB;
+
+*********************food type table************************
+
+CREATE TABLE `kebab_kitchen_plus`.`foodtype`
+( `typeId` INT(10) NOT NULL AUTO_INCREMENT ,
+`title` VARCHAR(30) NOT NULL ,
+PRIMARY KEY (`typeId`)) ENGINE = InnoDB;
+
+*************************food item table**********************
+CREATE TABLE `kebab_kitchen_plus`.`fooditem`
+( `itemId` INT(10) NOT NULL AUTO_INCREMENT ,
+`orderId` INT(10) NOT NULL ,
+`typeId` INT(10) NOT NULL ,
+`price` INT NOT NULL ,
+`description` VARCHAR(50) NOT NULL ,
+PRIMARY KEY (`itemId`)) ENGINE = InnoDB;
+
+***********************order table************************
+
+CREATE TABLE `kebab_kitchen_plus`.`order`
+( `orderId` INT(10) NOT NULL AUTO_INCREMENT ,
+`customerId` INT(10) NOT NULL ,
+`adminId` INT(10) NOT NULL ,
+`orderTime` DATETIME NOT NULL ,
+PRIMARY KEY (`orderId`)) ENGINE = InnoDB;
