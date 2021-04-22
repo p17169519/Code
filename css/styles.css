@@ -7,10 +7,6 @@ body {
   height: 100%;
  }
 
- main a {
-
- }
-
 header {
   display: flex;
   justify-content: center;
@@ -74,7 +70,6 @@ h2 em {
 }
 
 h3 {
-  /* font-size: 100px; */
   margin: 0;
   font-family: Copperplate;
   text-align: center;
@@ -320,7 +315,6 @@ span {
 }
 
 #myBasket.open {
-  /* display: flex; */
   opacity: 1;
   transform: translateX(0);
   z-index: 1;
@@ -491,6 +485,10 @@ span {
   color: #e62e40;
 }
 
+/********************************* admin end *********************************/
+
+/* ************************************************************************* */
+/****************** for devices with screens larger than 680px ***************/
 @media screen and (min-width: 680px)  {
 
   .wrapper img {
@@ -519,23 +517,18 @@ span {
 
   .hLarge {
     display: contents;
+    font-size: 70px;
   }
 
   header img {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     padding-top: 10px;
   }
 
-  .log img {
-    width: 60px;
-    height: 60px;
-  }
 
   .log:hover {
-
   }
-
 
   /*************************** for menu ***************************/
   #myBasket {
@@ -543,15 +536,11 @@ span {
     transform: translateX(0);
     opacity: 1;
     top: 100px;
-
   }
 
   .menuContainer {
-    /* display: grid;
-    grid-template-columns: auto auto; */
     display: flex;
     align-items: flex-start;
-
   }
 
   #menuToggler {
@@ -567,14 +556,24 @@ span {
     padding-left: 50px;
   }
 
-
-
 }
 
-/* End of media 680px query*/
+/*************************** End of media 680px query*************************/
 
+/* ************************************************************************* */
+/****************** for devices with screens larger than 1050px ***************/
 
 @media screen and (min-width: 1050px) {
+
+  .log img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hLarge {
+    font-size: 100px;
+  }
+
 
   .dealWrap {
     display:flex;
